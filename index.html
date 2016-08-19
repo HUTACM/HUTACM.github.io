@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
     <title> HUTACM </title>
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="skins/eden.css" media="screen">
-    <link href="http://libs.useso.com/js/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="The HUT ACM index">
+    <meta name="keywords" content="HUT,ACM,HUTACM">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="author" content="Aoxuets">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/imghover.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <style>
+        @font-face {
+            font-family: Monaco;
+            src: url('fonts/MONACO.TTF');
+        }
         body {
-            font-family: 微软雅黑;
+            font-family: Monaco,微软雅黑;
         }
         body a{
             transition:5s all;
@@ -25,7 +33,7 @@
     </style>
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top" style="display: block">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="display: block">
         <div class="container">
             <div class="navbar-header">
                 <a href="#" class="navbar-brand"> HUTACM </a>
@@ -33,12 +41,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class=" nav navbar-nav">
-                    <li> <a href="#about-acm">关于ACM</a> </li>
-                    <li> <a href="#about-us">关于我们</a></li>
+                    <li> <a href="#about-acm">About</a> </li>
+                    <li> <a href="#about-us">Team</a></li>
+                    <li> <a href="#about-us">Honor</a></li>
+                    <li> <a href="#about-us">Contact</a></li>
                     <li> <a href="#contant"> 招新! </a> </li>
                 </ul>
             </div>
@@ -129,14 +141,66 @@
         </div>
     </div>
     <div id="OurTeam" class="bs-docs-section" style="min-height: 550px; background: #faebcc">
-        <div class="container">
-            <h3>OUR TEAM</h3>
-        </div>
+        <h3>OUR TEAM</h3>
+        <div class="row" style="margin: 5em">
+                <div class="col-lg-12">
+                    <div id="news-slider" class="owl-carousel">
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <img src="imgs/Xiaoyuanyuan.jpg">
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="http://blog.csdn.net/stl112514" target="_blank">肖渊源</a> </h2>
+                                <p class="post-description"> 1asdfasdsvsdfasdfsdfsdafslkdwiedhkjssadasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasddfgdsfgsdfgsdfgdfgdfdfgsdfgdfgdsfg </p>
+                                <ul class="post-bar">
+                                    <li>
+                                        <a href="http://codeforces.com/profile/glasirius" target="_blank"><i class="fa fa-signal fa-3x"></i> </a>
+                                        <a href="https://github.com/glasirius" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+                                        <a href="http://blog.csdn.net/stl112514" target="_blank"><i class="fa fa-rss fa-3x"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <img src="imgs/Jiangshanbiao.jpg">
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="https://www.cnblogs.com/crazyacking/" target="_blank">姜杉彪</a> </h2>
+                                <p class="post-description"> 1asdfasdsvsdfasdfsdfsdafslkdwiedhkjssadasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasddfgdsfgsdfgsdfgdfgdfdfgsdfgdfgdsfg </p>
+                                <ul class="post-bar">
+                                    <li>
+                                        <a href="http://codeforces.com/profile/Snarl_jsb" target="_blank"><i class="fa fa-signal fa-3x"></i> </a>
+                                        <a ><i class="fa fa-github fa-3x"></i></a>
+                                        <a href="https://www.cnblogs.com/crazyacking/" target="_blank"><i class="fa fa-rss fa-3x"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <img src="imgs/Lichengbo.jpg">
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title"><a href="https://www.cnblogs.com/keam37/" target="_blank">李承波</a> </h2>
+                                <p class="post-description"> 1asdfasdsvsdfasdfsdfsdafslkdwiedhkjssadasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasddfgdsfgsdfgsdfgdfgdfdfgsdfgdfgdsfg </p>
+                                <ul class="post-bar">
+                                    <li>
+                                        <a href="http://codeforces.com/profile/keambar" target="_blank"><i class="fa fa-signal fa-3x"></i> </a>
+                                        <a ><i class="fa fa-github fa-3x"></i></a>
+                                        <a href="https://www.cnblogs.com/keam37/" target="_blank"><i class="fa fa-rss fa-3x"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     <div id="ACMHonor" class="bs-docs-section" style="min-height: 550px; background: #f5e79e">
             <h3> HONOR </h3>
-            <div class="row" style="margin: 5em">
-                <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="row" style="margin: 2.5em">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <figure class="imghvr-border-reveal-top-left">
                         <img src="imgs/Win_EC_2015.jpg">
                         <figcaption>
@@ -145,7 +209,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <figure class="imghvr-border-reveal-top-left">
                         <img src="imgs/Win_ICPC_2015.jpg">
                         <figcaption>
@@ -154,7 +218,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <figure class="imghvr-border-reveal-top-left">
                         <img src="imgs/Win_Xt_2016.jpg">
                         <figcaption>
@@ -163,7 +227,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <figure class="imghvr-border-reveal-top-left">
                         <img src="imgs/Win_2016_HDU_nv.jpg">
                         <figcaption>
@@ -177,7 +241,24 @@
     <div id="Contact" class="bs-docs-section" style="min-height: 550px; background: #ffffff">
         <div class="container">
             <h3>CONTACT</h3>
+            <i class="fa fa-qq fa-5x"></i>
+            <i class="fa fa-weibo fa-5x"></i>
+            <i class="fa fa-weixin fa-5x"></i>
         </div>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#news-slider").owlCarousel({
+                items:4,
+                itemsDesktop:[1199,2],
+                itemsDesktopSmall:[980,2],
+                itemsMobile:[600,1],
+                pagination:false,
+                navigationText:false,
+                autoPlay:true
+            });
+        });
+    </script>
 </body>
 </html>
