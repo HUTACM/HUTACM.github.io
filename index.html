@@ -15,6 +15,7 @@
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <style>
         @font-face {
             font-family: Monaco;
@@ -36,7 +37,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top" style="display: block">
         <div class="container">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand"> HUTACM </a>
+                <a href="./myindex.html" class="navbar-brand"> <i class="fa fa-home"></i> </a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -47,11 +48,11 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class=" nav navbar-nav">
-                    <li> <a href="#about-acm">About</a> </li>
-                    <li> <a href="#about-us">Team</a></li>
-                    <li> <a href="#about-us">Honor</a></li>
-                    <li> <a href="#about-us">Contact</a></li>
-                    <li> <a href="#contant"> 招新! </a> </li>
+                    <li> <a data-scroll href="#IntroduceACM">About</a> </li>
+                    <li> <a data-scroll href="#ACMHonor">Honor</a></li>
+                    <li> <a data-scroll href="#OurTeam">Team</a></li>
+                    <li> <a data-scroll href="#Contact">Contact</a></li>
+                    <li> <a data-scroll href="#"> 招新! </a> </li>
                 </ul>
             </div>
         </div>
@@ -141,8 +142,9 @@
         </div>
     </div>
     <div id="ACMHonor" class="bs-docs-section" style="min-height: 550px; background: #f5e79e">
+        <div class="container">
             <h3> HONOR </h3>
-            <div class="row" style="margin: 5em">
+            <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <figure class="imghvr-border-reveal-top-left">
                         <img src="imgs/Win_EC_2015.jpg">
@@ -179,6 +181,9 @@
                         </figcaption>
                     </figure>
                 </div>
+            </div>
+            <hr style="height:3px;border:none;border-top:3px double #999999;" />
+            <a href="./memory.html" class="jumbotron-a"> More Img</a>
         </div>
     </div>
     <div id="OurTeam" class="bs-docs-section" style="min-height: 550px; background: #faebcc">
@@ -270,13 +275,47 @@
             </div>
         </div>
     </div>
-    <div id="Contact" class="bs-docs-section" style="min-height: 550px; background: #ffffff">
+    <div id="Contact" class="bs-docs-section" style="min-height: 550px; background: #fcf8e3">
         <div class="container">
             <h3>CONTACT</h3>
-            <i class="fa fa-qq fa-5x"></i>
-            <i class="fa fa-weibo fa-5x"></i>
-            <i class="fa fa-weixin fa-5x"></i>
-            <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=uomKjY6DiYuIiY36y8uU2dXX" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png"/></a>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="jumbotron" style="min-height: 250px;">
+                        <h2>HUT ACM 16 级招新开始啦！</h2>
+                        <p>
+                            勇敢的少年啊<br>
+                            你渴望力量吗？（滑稽）<br>
+                            你渴望高薪吗？（滑稽+1）<br>
+                            你渴望丰厚的奖学金吗？（滑稽+2）<br>
+                            你渴望拥有卓越的编程能力和超凡的算法思维吗？（滑稽+3）<br>
+                            那还在等什么！那还在等什么！快点加入我们工大ACM吧！这时报名，刷题面试，即可加入工大ACM，成为工大最强人类！怎么样？心动了吗？心动就来行动吧！
+                        </p>
+                        <a href="./recruitment.html" class="jumbotron-a"> Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="single-member effect">
+                        <div class="member-image">
+                            <img src="imgs/Aoxuets.jpg">
+                        </div>
+                        <div class="member-info">
+                            <h4>Aoxuets</h4>
+                            <h5>站长</h5>
+                            <p>
+                                C,C++,Java,算法<br>
+                                欢迎一起交流学习!<br>
+                                qq：3074931237。<br>
+                                <a href="http://weibo.com/5750550100/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1">
+                                    <i class="fa fa-weibo fa-2x"></i>
+                                </a>
+                                <i class="fa fa-github fa-2x"></i>
+                                <a href="http://blog.csdn.net/aoxuets"> <i class="fa fa-rss fa-2x"></i> </a>
+                            </p>
+                            <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=uomKjY6DiYuIiY36y8uU2dXX" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -292,6 +331,7 @@
                 autoPlay:true
             });
         });
+        smoothScroll.init();
     </script>
 </body>
 </html>
