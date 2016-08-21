@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
+    <title> HUTACM </title>
     <meta charset="UTF-8">
-    <title>MEMORY</title>
+    <meta name="description" content="The HUT ACM Memory">
+    <meta name="keywords" content="HUT,ACM,HUTACM">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="author" content="Aoxuets">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/chromagallery.min.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <style>
+        @font-face {
+            font-family: Monaco;
+            src: url('fonts/MONACO.TTF');
+        }
+        body {
+            font-family: Monaco,微软雅黑;
+            background: #1C3544;
+        }
+        body a{
+            transition:5s all;
+            -webkit-transition:5s all;
+            -moz-transition:5s all;
+            -o-transition:5s all;
+            -ms-transition:5s all;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="navbar navbar-inverse navbar-fixed-top" style="display: block">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="./index.html" class="navbar-brand"> <i class="fa fa-home"></i> </a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class=" nav navbar-nav">
+                    <li> <a data-scroll href="./index.html#IntroduceACM">About</a> </li>
+                    <li> <a data-scroll href="./index.html#ACMHonor">Honor</a></li>
+                    <li> <a data-scroll href="./index.html#OurTeam">Team</a></li>
+                    <li> <a data-scroll href="./index.html#Contact">Contact</a></li>
+                    <li> <a data-scroll href="./recruitment.html"> 招新! </a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 5em">
+        <h3 style="color: #ffffff; text-align: center; font-size: 30px; margin-bottom: 2em"> HUTACM MEMORY </h3>
+        <div id="PushImg1" class="chroma-gallery mygallery">
+        </div>
+    </div>
+    <script src="js/chromagallery.pkgd.min.js"></script>
+    <script>
+        var text1 = "<img src=\"Memory\/Thumbs\/";
+        var text2 = ".jpg\" data-largesrc=\"Memory\/";
+        var Ans = "";
+        for(var i = 1; i <= 61; ++i) {
+            var tmp = i < 10 ? ("0" + i) : i;
+            Ans = text1+tmp+text2+tmp+".jpg\"";
+            $("#PushImg1").append("<div>" + Ans + "<\/div>");
+            //alert(Ans);
+        }
+        $(".mygallery").chromaGallery
+        ({
+            color:'#000',
+            gridMargin:15,
+            maxColumns:5,
+            dof:true,
+            screenOpacity:0.8
+        });
+    </script>
 </body>
 </html>
